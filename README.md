@@ -59,7 +59,7 @@ function AliasLL {
 Set-Alias lll AliasLLL -Option AllScope
 Set-Alias ll AliasLL -Option AllScope
 ```
-#### 5. Configure a fonte para reconhecer os caracteres do git e da linha de comando ####  
+#### 5. Instale a fonte para reconhecer os caracteres do git e da linha de comando ####  
 - Execute esse comando no seu terminal PowerShell:
 
 ```powershell
@@ -71,3 +71,15 @@ Invoke-WebRequest -Uri "https://github.com/lzocateli00/terminal-windows/blob/mai
 cd $HOME/Downloads/
 ./install-font.ps1
 ```
+#### 6. Configure a fonte para o Windows Terminal (PowerShell) ####  
+
+:::image type="content" source="./images/WindowsTerminal.png" alt-text="Windows Start":::
+
+:::image type="content" source="./images/WindowsTerminal-Settings.png" alt-text="Windows Terminal-Settings":::
+
+:::image type="content" source="./images/PowerShell-Font.png" alt-text="PowerShell-Font":::
+
+- Feche o Windows Terminal
+- Abra o Windows Terminal, sua linha de comando, em uma pasta de projeto com git, deve ter essa aparencia:
+
+ 
