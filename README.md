@@ -82,4 +82,11 @@ cd $HOME/Downloads/
 - Feche o Windows Terminal
 - Abra o Windows Terminal, sua linha de comando, em uma pasta de projeto com git, deve ter essa aparencia:
 
- 
+ #### 7. Configure a fonte para o terminal do VsCode ####  
+
+- Abra o VsCode, depois vá para as configurações do usuario ( CTRL + , )
+- Configure a fonte para o terminal, copie no campo indicado: MesloLGM NF   
+
+:::image type="content" source="./images/VsCode-Meslo.png" alt-text="VsCode Font":::
+
+- Pode fechar o vscode e abrir novamente, o terminal já estara com a nova configuração.
