@@ -73,11 +73,11 @@ cd $HOME/Downloads/
 ```
 #### 6. Configure a fonte para o Windows Terminal (PowerShell) ####  
 
-:::image type="content" source="./images/WindowsTerminal.png" alt-text="Windows Start":::
+![Windows Start](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/WindowsTerminal.png)
 
-:::image type="content" source="./images/WindowsTerminal-Settings.png" alt-text="Windows Terminal-Settings":::
+![Windows Terminal-Settings](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/WindowsTerminal-Settings.png)
 
-:::image type="content" source="./images/PowerShell-Font.png" alt-text="PowerShell-Font":::
+![PowerShell-Font](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/PowerShell-Font.png)
 
 - Feche o Windows Terminal
 - Abra o Windows Terminal, sua linha de comando, em uma pasta de projeto com git, deve ter essa aparencia:
@@ -87,6 +87,6 @@ cd $HOME/Downloads/
 - Abra o VsCode, depois vá para as configurações do usuario ( CTRL + , )
 - Configure a fonte para o terminal, copie no campo indicado: MesloLGM NF   
 
-:::image type="content" source="./images/VsCode-Meslo.png" alt-text="VsCode Font":::
+![VsCode Font](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/VsCode-Meslo.png)
 
 - Pode fechar o vscode e abrir novamente, o terminal já estara com a nova configuração.
