@@ -7,7 +7,7 @@ Tenha o VsCode já instalado
 #### 1. Instale o Windows Terminal ####   
 **Abra o PowerShell - Como Administrador**
 
-- dddd
+- choco install microsoft-windows-terminal
 
 #### 2. Instale o modulo do powershell para o posh-git ####  
 **Abra o PowerShell - Sem Administrador**
