@@ -27,6 +27,7 @@ Install-Module posh-git -Scope CurrentUser -Force
 
 ```powershell
 Install-Module oh-my-posh -Scope CurrentUser -Force
+Install-Module PSReadLine -Scope CurrentUser -Force
 Import-Module PSReadLine
 ```
 
