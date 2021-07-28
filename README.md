@@ -81,7 +81,11 @@ cd $HOME/Downloads/
 ![PowerShell-Font](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/PowerShell-Font.png)
 
 - Feche o Windows Terminal
-- Abra o Windows Terminal, sua linha de comando, em uma pasta de projeto com git, deve ter essa aparencia:
+- Abra o Windows Terminal, sua linha de comando, em uma pasta de projeto com git, com dotnet, deve ter essa aparencia:
+
+![Win Terminal](https://github.com/lzocateli00/terminal-windows/blob/019b2b87148053b683626f3e267a132b59d28365/images/WindowsTerminal-Final.png)
+
+- Se quiser personalizar, abra o arquivo do tema que fica nessa pasta: "\Documentos\WindowsPowerShell\Modules\oh-my-posh\3.168.0\themes\slimfat.omp.json"
 
  #### 7. Configure a fonte para o terminal do VsCode ####  
 
@@ -91,9 +95,3 @@ cd $HOME/Downloads/
 ![VsCode Font](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/VsCode-Meslo.png)
 
 - Pode fechar o vscode e abrir novamente, o terminal já estara com a nova configuração.
-
-Deve ficar com essa aparecia em uma pasta com git e dotnet:
-
-![Win Terminal](https://github.com/lzocateli00/terminal-windows/blob/019b2b87148053b683626f3e267a132b59d28365/images/WindowsTerminal-Final.png)
-
-
