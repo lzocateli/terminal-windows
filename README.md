@@ -93,6 +93,6 @@ cd $HOME/Downloads/
 
 Deve ficar com essa aparecia em uma pasta com git e dotnet:
 
-![Win Terminal](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/VsCode-Meslo.png)
+![Win Terminal](https://github.com/lzocateli00/terminal-windows/blob/019b2b87148053b683626f3e267a132b59d28365/images/WindowsTerminal-Final.png)
 
 
