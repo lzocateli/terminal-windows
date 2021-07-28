@@ -90,3 +90,9 @@ cd $HOME/Downloads/
 ![VsCode Font](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/VsCode-Meslo.png)
 
 - Pode fechar o vscode e abrir novamente, o terminal já estara com a nova configuração.
+
+Deve ficar com essa aparecia em uma pasta com git e dotnet:
+
+![Win Terminal](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/VsCode-Meslo.png)
+
+
