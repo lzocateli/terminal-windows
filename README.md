@@ -142,3 +142,6 @@ cd $HOME/Downloads/
 ![VsCode Font](https://github.com/lzocateli00/terminal-windows/blob/37631020d9abeac1802e29231de79cd14d17f561/images/VsCode-Meslo.png)
 
 - Pode fechar o vscode e abrir novamente, o terminal já estara com a nova configuração.
+
+
+- Referencias: ![Unicode Table](https://unicode-table.com/en)
