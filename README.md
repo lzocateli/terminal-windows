@@ -119,7 +119,9 @@ foreach ($file in Get-ChildItem "$fontDestination\*.ttf") {
 cd $HOME/Downloads/
 ./install-font.ps1
 ```
-ou instale manualmente a fonte: ![Windows install fonts](https://github.com/lzocateli00/terminal-windows/blob/708d98718cd7c713263865c3ecd4c1bccdb61c78/images/Windows%20Install%20font.jpg)
+**ou instale manualmente a fonte:**   
+
+![Windows install fonts](https://github.com/lzocateli00/terminal-windows/blob/708d98718cd7c713263865c3ecd4c1bccdb61c78/images/Windows%20Install%20font.jpg)
 
 #### 6. Configure a fonte para o Windows Terminal (PowerShell) ####  
 
