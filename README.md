@@ -144,4 +144,4 @@ cd $HOME/Downloads/
 - Pode fechar o vscode e abrir novamente, o terminal já estara com a nova configuração.
 
 
-- Referencias: ![Unicode Table](https://unicode-table.com/en)
+- Referencias: [Unicode Table](https://unicode-table.com/en)
