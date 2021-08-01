@@ -78,22 +78,39 @@ Set-Alias ll AliasLL -Option AllScope
 [CmdletBinding()]
 param ()
 
-$fontName = 'Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf'
+
+$fontNameDownload = 'Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf'
 $url = 'https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/'
 
-$fontDestination = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts\$fontName"
+$fontDestination = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts\"
 
-Invoke-WebRequest -Uri "$url$fontName" -OutFile $fontDestination
+if (-not(Test-Path -Path "$fontDestination$fontNameDownload")) {
+    Invoke-WebRequest -Uri "$url$fontNameDownload" -OutFile "$fontDestination$fontNameDownload"
+}
 
-if (Test-Path $fontDestination) {
-    [System.IO.FileInfo]$fontFile = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts\$fontName"
+Write-Output "Install fonts"
+$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
 
-    if ($PSCmdlet.ShouldProcess($fontFile.Name, "Install Font")) {
-        $shellApp = New-Object -ComObject shell.application
-        $fonts = $shellApp.NameSpace(0x14)
-        $fonts.CopyHere($fontFile.FullName)
+foreach ($file in Get-ChildItem "$fontDestination\*.ttf") {
+    $fileName = $file.Name
+
+    if (-not(Test-Path -Path "C:\Windows\fonts\$fileName")) {
+        Write-Output "Copindo para: c:\windows\fonts\$fileName"
+
+        Get-ChildItem $file | ForEach-Object { 
+            try {
+                
+                $fonts.CopyHere($_.fullname) 
+            }
+            catch {
+                write-warning $_.exception.message
+                
+            }
+        }
+  
+        Copy-Item $file.FullName c:\windows\fonts\ -Force
+
     }
-    
 }
 ```
 - Execute os comandos: (Caso necessite elevação de acesso, feche o PowerShell atual e abra um novo como Administrador)
