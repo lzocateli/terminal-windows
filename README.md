@@ -61,7 +61,7 @@ Set-Alias lll AliasLLL -Option AllScope
 Set-Alias ll AliasLL -Option AllScope
 ```
 #### 5. Instale a fonte para reconhecer os caracteres do git e da linha de comando ####  
-- Execute esse comando no seu terminal PowerShell: crie um arquivo install-font.ps1 com o conteudo abaixo
+- Execute esse comando no seu terminal PowerShell: crie um arquivo install-font.ps1 com o conteudo abaixo ou baixe o zip e extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" click [aqui](https://ohmyposh.dev/docs/fonts) para baixar o zip
 
 ```powershell
 #!/bin/pwsh
