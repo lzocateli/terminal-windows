@@ -136,8 +136,11 @@ cd $HOME/Downloads/
 
 ![Win Terminal](https://github.com/lzocateli00/terminal-windows/blob/019b2b87148053b683626f3e267a132b59d28365/images/WindowsTerminal-Final.png)
 
-- Se quiser personalizar, abra o arquivo do tema que fica nessa pasta: "\Documentos\WindowsPowerShell\Modules\oh-my-posh\3.168.0\themes\slimfat.omp.json"
+- Se quiser personalizar, abra o arquivo do tema que fica nessa pasta: "\Documentos\WindowsPowerShell\Modules\oh-my-posh\3.168.0\themes\slimfat.omp.json" ou 
+"\Documentos\PowerShell\Modules\oh-my-posh\3.168.0\themes\slimfat.omp.json"
 
+Codigo Unicode para "seta" do prompt: ➠  ou \u27A0
+ 
  #### 7. Configure a fonte para o terminal do VsCode ####  
 
 - Abra o VsCode, depois vá para as configurações do usuario ( CTRL + , )
