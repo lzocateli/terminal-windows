@@ -2,12 +2,15 @@
 
 >Esse procedimento foi realizado no Windows 10 Pro Version 20H2 (build 19042.1052)   
 PowerShell versão 5.1  
-Tenha o VsCode já instalado   
+Tenha o VsCode já instalado  
+Tenha o choco já instalado => referencia: [chocolatey](https://chocolatey.org/install)
 
 #### 1. Instale o Windows Terminal ####   
 **Abra o PowerShell - Como Administrador**
 
-- choco install microsoft-windows-terminal
+```powershell
+choco install microsoft-windows-terminal
+```
 
 #### 2. Instale o modulo do powershell para o posh-git ####  
 **Abra o PowerShell - Sem Administrador**
@@ -62,65 +65,9 @@ Set-Alias lll AliasLLL -Option AllScope
 Set-Alias ll AliasLL -Option AllScope
 ```
 #### 5. Instale a fonte para reconhecer os caracteres do git e da linha de comando ####  
-- Execute esse comando no seu terminal PowerShell: crie um arquivo install-font.ps1 com o conteudo abaixo ou baixe o zip e extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" click [aqui](https://ohmyposh.dev/docs/fonts) para baixar o zip
+- Click [aqui](https://ohmyposh.dev/docs/config-fonts) baixe o zip referente a fonte "MESLO LGM NF", extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" 
 
-```powershell
-#!/bin/pwsh
-
-<#
-  .SYNOPSIS
-    lzocateli00 PowerShell Install Font Meslo M Regular Windows
-  .DESCRIPTION
-    Download and install the Meslo font, which will be used in 
-    PowerShell + posh-git customization, as well as in VsCode
-  .LINK
-    GitHub.com/lzocateli00 Twitter.com/lzocateli00
-#>
-[CmdletBinding()]
-param ()
-
-
-$fontNameDownload = 'Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf'
-$url = 'https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/'
-
-$fontDestination = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts\"
-
-if (-not(Test-Path -Path "$fontDestination$fontNameDownload")) {
-    Invoke-WebRequest -Uri "$url$fontNameDownload" -OutFile "$fontDestination$fontNameDownload"
-}
-
-Write-Output "Install fonts"
-$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
-
-foreach ($file in Get-ChildItem "$fontDestination\*.ttf") {
-    $fileName = $file.Name
-
-    if (-not(Test-Path -Path "C:\Windows\fonts\$fileName")) {
-        Write-Output "Copindo para: c:\windows\fonts\$fileName"
-
-        Get-ChildItem $file | ForEach-Object { 
-            try {
-                
-                $fonts.CopyHere($_.fullname) 
-            }
-            catch {
-                write-warning $_.exception.message
-                
-            }
-        }
-  
-        Copy-Item $file.FullName c:\windows\fonts\ -Force
-
-    }
-}
-```
-- Execute os comandos: (Caso necessite elevação de acesso, feche o PowerShell atual e abra um novo como Administrador)
-
-```powershell
-cd $HOME/Downloads/
-./install-font.ps1
-```
-**ou instale manualmente a fonte:**   
+- Instale a fonte com click direito sobre o arquivo extraido do zip:   
 
 ![Windows install fonts](https://github.com/lzocateli00/terminal-windows/blob/708d98718cd7c713263865c3ecd4c1bccdb61c78/images/Windows%20Install%20font.jpg)
 
