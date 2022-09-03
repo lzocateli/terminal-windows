@@ -5,6 +5,13 @@ PowerShell versão 5.1
 Tenha o VsCode já instalado  
 Tenha o choco já instalado => referencia: [chocolatey](https://chocolatey.org/install)
 
+Habilite a execução de script, pode ser dessa forma (abra o powershell como administrador):
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Undefined
+Set-ExecutionPolicy -ExecutionPolicy bypass -Scope CurrentUser
+```
+
 #### 1. Instale o Windows Terminal ####   
 **Abra o PowerShell - Como Administrador**
 
