@@ -61,15 +61,15 @@ Import-Module oh-my-posh
 Import-Module PSReadLine
 Set-PoshPrompt -Theme slimfat  
  
-function AliasLLL {
+function AliasLaa {
     Get-ChildItem -Force | more
 }
-function AliasLL {
+function AliasLa {
     Get-ChildItem -Force
 }
 
-Set-Alias lll AliasLLL -Option AllScope
-Set-Alias ll AliasLL -Option AllScope
+Set-Alias laa AliasLaa -Option AllScope
+Set-Alias la AliasLa -Option AllScope
 ```
 #### 5. Instale a fonte para reconhecer os caracteres do git e da linha de comando ####  
 - Click [aqui](https://ohmyposh.dev/docs/installation/fonts) baixe o zip referente a fonte "MESLO LGM NF", extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" 
