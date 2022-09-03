@@ -72,7 +72,7 @@ Set-Alias lll AliasLLL -Option AllScope
 Set-Alias ll AliasLL -Option AllScope
 ```
 #### 5. Instale a fonte para reconhecer os caracteres do git e da linha de comando ####  
-- Click [aqui](https://ohmyposh.dev/docs/config-fonts) baixe o zip referente a fonte "MESLO LGM NF", extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" 
+- Click [aqui](https://ohmyposh.dev/docs/installation/fonts) baixe o zip referente a fonte "MESLO LGM NF", extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" 
 
 - Instale a fonte com click direito sobre o arquivo extraido do zip:   
 
