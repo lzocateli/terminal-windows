@@ -53,7 +53,7 @@ Edite o profile do seu perfil do PowerShell:
 ```powershell
 code $PROFILE
 ```
-Copie as linhas abaixo:
+Se for Windows 10, Copie as linhas abaixo:
 
 ```powershell
 Import-Module posh-git   
@@ -71,6 +71,10 @@ function AliasLa {
 Set-Alias laa AliasLaa -Option AllScope
 Set-Alias la AliasLa -Option AllScope
 ```
+
+Se for windows 11, execute esse procedimento: https://ohmyposh.dev/docs/installation/prompt
+
+
 #### 5. Instale a fonte para reconhecer os caracteres do git e da linha de comando ####  
 - Click [aqui](https://ohmyposh.dev/docs/installation/fonts) baixe o zip referente a fonte "MESLO LGM NF", extraia apenas a fonte "Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf" 
 
